@@ -14,13 +14,11 @@ To get started with this project, simply clone the repository and open the files
 git clone https://github.com/your-username/ajax-request-test.git
 ```
 
+Please ensure that you have PHP version 7.4.19 or higher installed and configured on your local environment.
+
 ## Usage
 
 1. Open the project files in your code editor.
 2. Ensure you have a web server set up (e.g., Apache, Nginx).
 3. Start the web server and make sure it's running.
 4. Open the project in a web browser.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or would like to add new features, please feel free to submit a pull request.
