@@ -1,4 +1,5 @@
 <?php
+
 $names = array(
     'João',
     'Maria',

@@ -76,3 +76,31 @@ function getComment() {
   }
 
   getComment();
+
+$("#sum").submit(function(e){
+
+    e.preventDefault();
+
+    let value1 = $(".value1").val();
+    let value2 = $(".value2").val();
+    let calc = $(".calc").val();
+
+    $.ajax({
+        url: "/ajax/app/PHP/main.php",
+        method: "POST",
+        data: {
+            class: "Operations",
+            method: "sumCheack",
+            value1: value1,
+            value2: value2,
+            calc: calc,
+        },
+        dataType: "JSON",
+    }).done(function(response){
+        console.log(response);
+
+        $(".calcResponse").html(response);
+
+    });
+    
+});

@@ -6,12 +6,23 @@
     <title>Ajax Request</title>
 </head>
 <body>
+    
+    <style>
 
-    <hr>
-    <br>
+        p{
+            text-align: center;
+        }
 
-        <p>Get response</p>
+        div{
+            padding: auto;
+            margin: 5px;
 
+            border: 1px solid gray;
+        }
+
+    </style>
+
+    <p>Get response</p>
 
     <section class="ArrayList">
 
@@ -26,8 +37,8 @@
     </section>
     
 
-<hr>
-<br>
+    <hr>
+    <br>
 
     <p>Send Request whit GET or POST</p>
 
@@ -37,27 +48,55 @@
             
             <form id="POST" action="" method="POST">
 
-                <label for="user"></label>
-                <input id="user" name='user' class="user" type="text" required placeholder="your name">
+                <label for="user">Name</label>
+                <input id="user" name='user' class="user" type="text"  placeholder="your name">
                 
-                <label for="text"></label>
-                <input id="text" type="text" name="text" class="text" required placeholder="your mensage">
+                <label for="text">Mensage</label>
+                <input id="text" type="text" name="text" class="text"  placeholder="your mensage">
 
                 <button type="submit" form="POST" class="sendRequest">Send</button>
 
             </form>
 
-            <div class="userResponse"></div>
+            <article class="userResponse"></article>
 
         </article>
 
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app/js/ajax.js"></script>
 
-<br>
-<hr>
+    <hr>
+    <br>
+
+    <p>Get a method in the class</p>
+
+    <section>
+
+        <article>
+            
+            <form id="sum" action="" method="POST">
+
+                <label for="value1">Value_1</label>
+                <input id="value1" name='value1' class="value1" type="text" >
+                
+                <label for="value2">Value_2</label>
+                <input id="value2" type="text" name="value2" class="value2" >
+                
+                <label for="calc">Result</label>
+                <input id="calc" type="text" name="calc" class="calc" >
+
+                <button type="submit" form="sum" class="sendRequest">Cheak sum</button>
+
+            </form>
+
+            <article class="calcResponse"></article>
+
+        </article>
+
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="app/js/ajax.js"></script>
 
 </body>
 </html>
